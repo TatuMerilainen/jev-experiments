@@ -2,6 +2,8 @@
 
 Tools and demos built on Jev. Jev is the first System One model from [TypeSafe](https://typesafe.ai). It returns typed answers with probabilities (Choice, Score, Noul). Code owns the workflow and combines the answers.
 
+Claude Code wrote all code and text in this repo. No person has reviewed the code.
+
 | Project | Status | Summary |
 | --- | --- | --- |
 | [agent-websearch-eval](agent-websearch-eval/README.md) | Works, small value for Claude Code users | Jev classifier for tool output, packaged as a Claude Code plugin. Flags outside input (web search, web fetch, MCP results, `curl` output) that tries to change the agent's behaviour without the user's consent. Claude already resists most injections by itself. |

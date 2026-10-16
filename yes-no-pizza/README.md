@@ -31,5 +31,5 @@ The state is `{ "question": "<your text>" }`. The text can be at most 500 charac
 ## Web UI
 
 - The question box: Enter asks, Shift+Enter adds a new line.
-- The answer card: the answer in large text, and Jev's confidence.
+- The answer card: the answer in large text, and Jev's confidence. The API computes the confidence from the probabilities of the three options. It is high when one option gets most of the probability.
 - The Jev sidebar: the same panel as in the tabletop game runner. It shows the model, input tokens, cost, response time, the state, the question and the probability of each option. Each part has a Copy button. The "Jev request" button in the header opens and closes it. It is open by default, and the browser remembers the choice.

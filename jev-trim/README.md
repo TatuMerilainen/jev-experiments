@@ -4,7 +4,7 @@ A Claude Code plugin that trims long command output with Jev before Claude reads
 
 ## Status
 
-Works for commands that succeed. In a live test with 5 long outputs, Claude answered all 5 right with and without the plugin. With the plugin, each session used about half the tokens. In Claude Code sessions with Claude Opus 5.5 on a failing test log, the session cost fell from $0.169 to $0.093. A failed command is not trimmed. See [Known issues](#known-issues).
+Works for commands that succeed. In a live test with 5 long outputs, Claude answered all 5 right with and without the plugin. With the plugin, the sessions used 47% fewer tokens in total. A failed command is not trimmed. See [Known issues](#known-issues).
 
 ## How it works
 
@@ -45,16 +45,22 @@ Live (`demo/live.py`), one Claude Code session per task and side, Claude Haiku 5
 ## Cost and speed
 
 - **Jev:** one request per output, 6,000 to 15,000 tokens, $0.0003 to $0.0006, about 0.35 s.
-- **Haiku sessions in the test:** $0.0165 without the plugin, $0.0058 with it, plus $0.0021 for Jev.
+- **All 5 Haiku sessions in the test together:** $0.0165 without the plugin, $0.0058 with it, plus $0.0021 for Jev.
 - **Claude Code sessions with Opus 5.5:** on the failing test log, a session with the full output cost $0.169 at list prices. With the trimmed output it cost $0.093, including $0.0003 for Jev. In a third session, Claude also searched the full output with `grep` to check the skipped lines, and the session cost $0.130. All three answers were right.
-- **Cache writes:** the headless test sessions wrote to the 1-hour cache, and the interactive sessions to the 5-minute cache. At the 5-minute price, the 11,000 cache-write tokens that the 5-output test removed per output cost about $0.028 on Sonnet 5.5 and $0.056 on Opus 5.5. Jev costs about $0.0004 per output.
+- **Cache writes:** in the 5-output test, the plugin kept about 11,000 tokens per output out of the session. Claude Code writes these tokens to the cache. At the 5-minute cache price, that is about $0.028 on Sonnet 5.5 and $0.056 on Opus 5.5. Jev costs about $0.0004 per output.
 - **Time:** the sessions with the plugin took about 1.5 s longer. Jev took about 0.35 s of that.
 
 ## Known issues
 
 - **Failed commands are not trimmed.** When a command exits with an error, Claude Code sends its output to `PostToolUseFailure`. That hook can add context, but it cannot replace the output. Claude Code also cuts long failure output in the middle, where the error often is. The live test used a script that exits 0, like reading a saved or CI log.
-- **Context can go.** In the server log, the trim removed an earlier memory warning. Claude still found the cause, and it said that the trimmed log did not show what drove memory up.
+- **Lost context.** In the server log, the trim removed an earlier memory warning. Claude still found the cause, and it said that the trimmed log did not show what drove memory up.
 - **Small test.** 5 made-up outputs and one run per side.
+
+## Setup
+
+1. Set the TypeSafe API key in `/plugin` or in `TYPESAFE_API_KEY`.
+2. Load the plugin: `claude --plugin-dir /path/to/jev-trim`.
+3. Optional settings in `/plugin`: `keep_at` (default 0.1) and `min_chars` (default 6000).
 
 ## Demo
 
@@ -79,12 +85,6 @@ Ask one of these and approve the command:
 The terminal shows a line like `Jev trim: kept 21 of 343 lines, about 6,392 tokens less for Claude to read.` Type `/context` to see the session's context use, then start a session without `--plugin-dir` and compare. Say in the prompt that the script prints a saved log. Otherwise Claude may look inside the script and read the file with `cat`, which the plugin leaves alone.
 
 `demo/live.py` runs all five tasks with and without the plugin and prints the comparison table.
-
-## Setup
-
-1. Set the TypeSafe API key in `/plugin` or in `TYPESAFE_API_KEY`.
-2. Load the plugin: `claude --plugin-dir /path/to/jev-trim`.
-3. Optional settings in `/plugin`: `keep_at` (default 0.1) and `min_chars` (default 6000).
 
 ## Data and privacy
 
