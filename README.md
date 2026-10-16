@@ -11,6 +11,19 @@ Tools and demos built on Jev. Jev is the first System One model from [TypeSafe](
 
 ## Setup
 
-- API key: create one at [console.typesafe.ai](https://console.typesafe.ai/) and set `TYPESAFE_API_KEY`.
-- Agent skill: a local copy of the TypeSafe skill lives in `.claude/skills/typesafe-ai/`. Source: `typesafe-ai/skills`, commit `65a39f3`.
-- Docs: [docs.typesafe.ai](https://docs.typesafe.ai/llms.txt).
+Each project needs a TypeSafe API key in `TYPESAFE_API_KEY`.
+
+Web apps (`tabletop-game-runner`, `yes-no-pizza`):
+
+```sh
+cd tabletop-game-runner
+npm install
+cp .env.example .env    # then set TYPESAFE_API_KEY
+npm run dev             # http://localhost:5173, yes-no-pizza on 5174
+```
+
+Claude Code plugins (`jev-trim`, `agent-websearch-eval`). Set the key in the environment or in `/plugin`.
+
+```sh
+claude --plugin-dir ./jev-trim
+```
