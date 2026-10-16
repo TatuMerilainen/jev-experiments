@@ -1,0 +1,293 @@
+> dashboard@2.4.0 build
+> webpack --mode production
+
+[webpack-cli] Compiler starting...
+WARNING in ./node_modules/react-router/dist/react-router.esm.js
+Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+Failed to parse source map from '/home/dev/dashboard/node_modules/react-router/src/index.ts' file: Error: ENOENT: no such file or directory
+
+WARNING in ./node_modules/dayjs/dist/dayjs.esm.js
+Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+Failed to parse source map from '/home/dev/dashboard/node_modules/dayjs/src/index.ts' file: Error: ENOENT: no such file or directory
+
+WARNING in ./node_modules/react-router/dist/react-router.esm.js
+Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+Failed to parse source map from '/home/dev/dashboard/node_modules/react-router/src/index.ts' file: Error: ENOENT: no such file or directory
+
+WARNING in ./node_modules/zod/dist/zod.esm.js
+Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+Failed to parse source map from '/home/dev/dashboard/node_modules/zod/src/index.ts' file: Error: ENOENT: no such file or directory
+
+WARNING in ./node_modules/react-router/dist/react-router.esm.js
+Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+Failed to parse source map from '/home/dev/dashboard/node_modules/react-router/src/index.ts' file: Error: ENOENT: no such file or directory
+
+WARNING in ./node_modules/react-router/dist/react-router.esm.js
+Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+Failed to parse source map from '/home/dev/dashboard/node_modules/react-router/src/index.ts' file: Error: ENOENT: no such file or directory
+
+WARNING in ./node_modules/dayjs/dist/dayjs.esm.js
+Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+Failed to parse source map from '/home/dev/dashboard/node_modules/dayjs/src/index.ts' file: Error: ENOENT: no such file or directory
+
+WARNING in ./node_modules/react-router/dist/react-router.esm.js
+Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+Failed to parse source map from '/home/dev/dashboard/node_modules/react-router/src/index.ts' file: Error: ENOENT: no such file or directory
+
+WARNING in ./node_modules/zod/dist/zod.esm.js
+Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+Failed to parse source map from '/home/dev/dashboard/node_modules/zod/src/index.ts' file: Error: ENOENT: no such file or directory
+
+WARNING in ./node_modules/zod/dist/zod.esm.js
+Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+Failed to parse source map from '/home/dev/dashboard/node_modules/zod/src/index.ts' file: Error: ENOENT: no such file or directory
+
+WARNING in ./node_modules/date-fns/dist/date-fns.esm.js
+Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+Failed to parse source map from '/home/dev/dashboard/node_modules/date-fns/src/index.ts' file: Error: ENOENT: no such file or directory
+
+WARNING in ./node_modules/clsx/dist/clsx.esm.js
+Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+Failed to parse source map from '/home/dev/dashboard/node_modules/clsx/src/index.ts' file: Error: ENOENT: no such file or directory
+
+WARNING in ./node_modules/dayjs/dist/dayjs.esm.js
+Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+Failed to parse source map from '/home/dev/dashboard/node_modules/dayjs/src/index.ts' file: Error: ENOENT: no such file or directory
+
+WARNING in ./node_modules/clsx/dist/clsx.esm.js
+Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+Failed to parse source map from '/home/dev/dashboard/node_modules/clsx/src/index.ts' file: Error: ENOENT: no such file or directory
+
+WARNING in ./node_modules/lodash-es/dist/lodash-es.esm.js
+Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+Failed to parse source map from '/home/dev/dashboard/node_modules/lodash-es/src/index.ts' file: Error: ENOENT: no such file or directory
+
+WARNING in ./node_modules/react-router/dist/react-router.esm.js
+Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+Failed to parse source map from '/home/dev/dashboard/node_modules/react-router/src/index.ts' file: Error: ENOENT: no such file or directory
+
+WARNING in ./node_modules/dayjs/dist/dayjs.esm.js
+Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+Failed to parse source map from '/home/dev/dashboard/node_modules/dayjs/src/index.ts' file: Error: ENOENT: no such file or directory
+
+WARNING in ./node_modules/immer/dist/immer.esm.js
+Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+Failed to parse source map from '/home/dev/dashboard/node_modules/immer/src/index.ts' file: Error: ENOENT: no such file or directory
+
+WARNING in ./node_modules/chart.js/dist/chart-js.esm.js
+Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+Failed to parse source map from '/home/dev/dashboard/node_modules/chart.js/src/index.ts' file: Error: ENOENT: no such file or directory
+
+WARNING in ./node_modules/clsx/dist/clsx.esm.js
+Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+Failed to parse source map from '/home/dev/dashboard/node_modules/clsx/src/index.ts' file: Error: ENOENT: no such file or directory
+
+WARNING in ./node_modules/lodash-es/dist/lodash-es.esm.js
+Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+Failed to parse source map from '/home/dev/dashboard/node_modules/lodash-es/src/index.ts' file: Error: ENOENT: no such file or directory
+
+WARNING in ./node_modules/immer/dist/immer.esm.js
+Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+Failed to parse source map from '/home/dev/dashboard/node_modules/immer/src/index.ts' file: Error: ENOENT: no such file or directory
+
+WARNING in ./node_modules/chart.js/dist/chart-js.esm.js
+Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+Failed to parse source map from '/home/dev/dashboard/node_modules/chart.js/src/index.ts' file: Error: ENOENT: no such file or directory
+
+WARNING in ./node_modules/react-router/dist/react-router.esm.js
+Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+Failed to parse source map from '/home/dev/dashboard/node_modules/react-router/src/index.ts' file: Error: ENOENT: no such file or directory
+
+WARNING in ./node_modules/chart.js/dist/chart-js.esm.js
+Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+Failed to parse source map from '/home/dev/dashboard/node_modules/chart.js/src/index.ts' file: Error: ENOENT: no such file or directory
+
+WARNING in ./node_modules/clsx/dist/clsx.esm.js
+Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+Failed to parse source map from '/home/dev/dashboard/node_modules/clsx/src/index.ts' file: Error: ENOENT: no such file or directory
+
+WARNING in ./node_modules/lodash-es/dist/lodash-es.esm.js
+Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+Failed to parse source map from '/home/dev/dashboard/node_modules/lodash-es/src/index.ts' file: Error: ENOENT: no such file or directory
+
+WARNING in ./node_modules/immer/dist/immer.esm.js
+Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+Failed to parse source map from '/home/dev/dashboard/node_modules/immer/src/index.ts' file: Error: ENOENT: no such file or directory
+
+WARNING in ./node_modules/chart.js/dist/chart-js.esm.js
+Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+Failed to parse source map from '/home/dev/dashboard/node_modules/chart.js/src/index.ts' file: Error: ENOENT: no such file or directory
+
+WARNING in ./node_modules/chart.js/dist/chart-js.esm.js
+Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+Failed to parse source map from '/home/dev/dashboard/node_modules/chart.js/src/index.ts' file: Error: ENOENT: no such file or directory
+
+WARNING in ./node_modules/lodash-es/dist/lodash-es.esm.js
+Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+Failed to parse source map from '/home/dev/dashboard/node_modules/lodash-es/src/index.ts' file: Error: ENOENT: no such file or directory
+
+WARNING in ./node_modules/immer/dist/immer.esm.js
+Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+Failed to parse source map from '/home/dev/dashboard/node_modules/immer/src/index.ts' file: Error: ENOENT: no such file or directory
+
+WARNING in ./node_modules/dayjs/dist/dayjs.esm.js
+Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+Failed to parse source map from '/home/dev/dashboard/node_modules/dayjs/src/index.ts' file: Error: ENOENT: no such file or directory
+
+WARNING in ./node_modules/axios/dist/axios.esm.js
+Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+Failed to parse source map from '/home/dev/dashboard/node_modules/axios/src/index.ts' file: Error: ENOENT: no such file or directory
+
+WARNING in ./node_modules/date-fns/dist/date-fns.esm.js
+Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+Failed to parse source map from '/home/dev/dashboard/node_modules/date-fns/src/index.ts' file: Error: ENOENT: no such file or directory
+
+WARNING in ./node_modules/date-fns/dist/date-fns.esm.js
+Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+Failed to parse source map from '/home/dev/dashboard/node_modules/date-fns/src/index.ts' file: Error: ENOENT: no such file or directory
+
+WARNING in ./node_modules/lodash-es/dist/lodash-es.esm.js
+Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+Failed to parse source map from '/home/dev/dashboard/node_modules/lodash-es/src/index.ts' file: Error: ENOENT: no such file or directory
+
+WARNING in ./node_modules/axios/dist/axios.esm.js
+Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+Failed to parse source map from '/home/dev/dashboard/node_modules/axios/src/index.ts' file: Error: ENOENT: no such file or directory
+
+WARNING in ./node_modules/react-router/dist/react-router.esm.js
+Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+Failed to parse source map from '/home/dev/dashboard/node_modules/react-router/src/index.ts' file: Error: ENOENT: no such file or directory
+
+WARNING in ./node_modules/lodash-es/dist/lodash-es.esm.js
+Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+Failed to parse source map from '/home/dev/dashboard/node_modules/lodash-es/src/index.ts' file: Error: ENOENT: no such file or directory
+
+WARNING in ./node_modules/uuid/dist/uuid.esm.js
+Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+Failed to parse source map from '/home/dev/dashboard/node_modules/uuid/src/index.ts' file: Error: ENOENT: no such file or directory
+
+WARNING in ./node_modules/dayjs/dist/dayjs.esm.js
+Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+Failed to parse source map from '/home/dev/dashboard/node_modules/dayjs/src/index.ts' file: Error: ENOENT: no such file or directory
+
+WARNING in ./node_modules/chart.js/dist/chart-js.esm.js
+Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+Failed to parse source map from '/home/dev/dashboard/node_modules/chart.js/src/index.ts' file: Error: ENOENT: no such file or directory
+
+WARNING in ./node_modules/zod/dist/zod.esm.js
+Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+Failed to parse source map from '/home/dev/dashboard/node_modules/zod/src/index.ts' file: Error: ENOENT: no such file or directory
+
+WARNING in ./node_modules/immer/dist/immer.esm.js
+Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+Failed to parse source map from '/home/dev/dashboard/node_modules/immer/src/index.ts' file: Error: ENOENT: no such file or directory
+
+WARNING in ./node_modules/axios/dist/axios.esm.js
+Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+Failed to parse source map from '/home/dev/dashboard/node_modules/axios/src/index.ts' file: Error: ENOENT: no such file or directory
+
+WARNING in ./node_modules/axios/dist/axios.esm.js
+Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+Failed to parse source map from '/home/dev/dashboard/node_modules/axios/src/index.ts' file: Error: ENOENT: no such file or directory
+
+WARNING in ./node_modules/dayjs/dist/dayjs.esm.js
+Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+Failed to parse source map from '/home/dev/dashboard/node_modules/dayjs/src/index.ts' file: Error: ENOENT: no such file or directory
+
+WARNING in ./node_modules/lodash-es/dist/lodash-es.esm.js
+Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+Failed to parse source map from '/home/dev/dashboard/node_modules/lodash-es/src/index.ts' file: Error: ENOENT: no such file or directory
+
+ERROR in ./src/api/client.ts 42:17-27
+[tsl] ERROR in /home/dev/dashboard/src/api/client.ts(42,17)
+      TS2339: Property 'retryAfter' does not exist on type 'Response'.
+
+WARNING in ./node_modules/date-fns/dist/date-fns.esm.js
+Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+Failed to parse source map from '/home/dev/dashboard/node_modules/date-fns/src/index.ts' file: Error: ENOENT: no such file or directory
+
+WARNING in ./node_modules/chart.js/dist/chart-js.esm.js
+Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+Failed to parse source map from '/home/dev/dashboard/node_modules/chart.js/src/index.ts' file: Error: ENOENT: no such file or directory
+
+WARNING in ./node_modules/date-fns/dist/date-fns.esm.js
+Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+Failed to parse source map from '/home/dev/dashboard/node_modules/date-fns/src/index.ts' file: Error: ENOENT: no such file or directory
+
+WARNING in ./node_modules/zod/dist/zod.esm.js
+Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+Failed to parse source map from '/home/dev/dashboard/node_modules/zod/src/index.ts' file: Error: ENOENT: no such file or directory
+
+WARNING in ./node_modules/date-fns/dist/date-fns.esm.js
+Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+Failed to parse source map from '/home/dev/dashboard/node_modules/date-fns/src/index.ts' file: Error: ENOENT: no such file or directory
+
+WARNING in ./node_modules/axios/dist/axios.esm.js
+Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+Failed to parse source map from '/home/dev/dashboard/node_modules/axios/src/index.ts' file: Error: ENOENT: no such file or directory
+
+WARNING in ./node_modules/immer/dist/immer.esm.js
+Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+Failed to parse source map from '/home/dev/dashboard/node_modules/immer/src/index.ts' file: Error: ENOENT: no such file or directory
+
+WARNING in ./node_modules/date-fns/dist/date-fns.esm.js
+Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+Failed to parse source map from '/home/dev/dashboard/node_modules/date-fns/src/index.ts' file: Error: ENOENT: no such file or directory
+
+WARNING in ./node_modules/uuid/dist/uuid.esm.js
+Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+Failed to parse source map from '/home/dev/dashboard/node_modules/uuid/src/index.ts' file: Error: ENOENT: no such file or directory
+
+WARNING in ./node_modules/react-router/dist/react-router.esm.js
+Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+Failed to parse source map from '/home/dev/dashboard/node_modules/react-router/src/index.ts' file: Error: ENOENT: no such file or directory
+
+WARNING in ./node_modules/immer/dist/immer.esm.js
+Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+Failed to parse source map from '/home/dev/dashboard/node_modules/immer/src/index.ts' file: Error: ENOENT: no such file or directory
+
+WARNING in ./node_modules/axios/dist/axios.esm.js
+Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+Failed to parse source map from '/home/dev/dashboard/node_modules/axios/src/index.ts' file: Error: ENOENT: no such file or directory
+
+WARNING in ./node_modules/zod/dist/zod.esm.js
+Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+Failed to parse source map from '/home/dev/dashboard/node_modules/zod/src/index.ts' file: Error: ENOENT: no such file or directory
+
+WARNING in ./node_modules/immer/dist/immer.esm.js
+Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+Failed to parse source map from '/home/dev/dashboard/node_modules/immer/src/index.ts' file: Error: ENOENT: no such file or directory
+
+WARNING in ./node_modules/date-fns/dist/date-fns.esm.js
+Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+Failed to parse source map from '/home/dev/dashboard/node_modules/date-fns/src/index.ts' file: Error: ENOENT: no such file or directory
+
+WARNING in ./node_modules/chart.js/dist/chart-js.esm.js
+Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+Failed to parse source map from '/home/dev/dashboard/node_modules/chart.js/src/index.ts' file: Error: ENOENT: no such file or directory
+
+WARNING in ./node_modules/dayjs/dist/dayjs.esm.js
+Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+Failed to parse source map from '/home/dev/dashboard/node_modules/dayjs/src/index.ts' file: Error: ENOENT: no such file or directory
+
+WARNING in ./node_modules/react-router/dist/react-router.esm.js
+Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+Failed to parse source map from '/home/dev/dashboard/node_modules/react-router/src/index.ts' file: Error: ENOENT: no such file or directory
+
+WARNING in ./node_modules/axios/dist/axios.esm.js
+Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+Failed to parse source map from '/home/dev/dashboard/node_modules/axios/src/index.ts' file: Error: ENOENT: no such file or directory
+
+WARNING in ./node_modules/uuid/dist/uuid.esm.js
+Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+Failed to parse source map from '/home/dev/dashboard/node_modules/uuid/src/index.ts' file: Error: ENOENT: no such file or directory
+
+WARNING in ./node_modules/dayjs/dist/dayjs.esm.js
+Module Warning (from ./node_modules/source-map-loader/dist/cjs.js):
+Failed to parse source map from '/home/dev/dashboard/node_modules/dayjs/src/index.ts' file: Error: ENOENT: no such file or directory
+
+asset main.3f9a1c.js 1.21 MiB [emitted] [immutable] [minimized] [big] (name: main)
+asset vendors.8b2d4e.js 812 KiB [emitted] [immutable] [minimized] [big] (name: vendors)
+modules by path ./src/ 412 KiB 188 modules
+modules by path ./node_modules/ 2.31 MiB 941 modules
+webpack 5.94.0 compiled with 1 error and 70 warnings in 18342 ms

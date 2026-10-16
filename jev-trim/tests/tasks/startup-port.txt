@@ -1,0 +1,165 @@
+  .   ____          _            __ _ _
+ :: Spring Boot ::                (v3.3.4)
+
+2026-10-16T09:12:00.040+03:00  DEBUG 7812 --- [main] o.s.b.f.s.DefaultListableBeanFactory : Creating shared instance of singleton bean 'jacksonObjectMapper'
+2026-10-16T09:12:00.044+03:00  DEBUG 7812 --- [main] o.s.b.f.s.DefaultListableBeanFactory : Creating shared instance of singleton bean 'invoiceService'
+2026-10-16T09:12:00.049+03:00  DEBUG 7812 --- [main] o.s.c.e.PropertySourcesPropertyResolver : Found key 'spring.cache.pool-size' in PropertySource 'application.yml'
+2026-10-16T09:12:00.076+03:00  DEBUG 7812 --- [main] o.s.b.f.s.DefaultListableBeanFactory : Creating shared instance of singleton bean 'restTemplate'
+2026-10-16T09:12:00.095+03:00  DEBUG 7812 --- [main] o.s.b.f.s.DefaultListableBeanFactory : Creating shared instance of singleton bean 'invoiceService'
+2026-10-16T09:12:00.131+03:00  DEBUG 7812 --- [main] o.s.c.e.PropertySourcesPropertyResolver : Found key 'spring.cache.enabled' in PropertySource 'application.yml'
+2026-10-16T09:12:00.169+03:00  INFO 7812 --- [main] o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68 ms.
+2026-10-16T09:12:00.184+03:00  DEBUG 7812 --- [main] o.s.c.e.PropertySourcesPropertyResolver : Found key 'spring.jpa.pool-size' in PropertySource 'application.yml'
+2026-10-16T09:12:00.205+03:00  DEBUG 7812 --- [main] o.s.c.e.PropertySourcesPropertyResolver : Found key 'spring.cache.timeout' in PropertySource 'application.yml'
+2026-10-16T09:12:00.212+03:00  DEBUG 7812 --- [main] o.s.b.f.s.DefaultListableBeanFactory : Creating shared instance of singleton bean 'taskScheduler'
+2026-10-16T09:12:00.238+03:00  DEBUG 7812 --- [main] o.s.c.e.PropertySourcesPropertyResolver : Found key 'spring.cache.pool-size' in PropertySource 'application.yml'
+2026-10-16T09:12:00.276+03:00  DEBUG 7812 --- [main] o.s.c.e.PropertySourcesPropertyResolver : Found key 'spring.mail.enabled' in PropertySource 'application.yml'
+2026-10-16T09:12:00.300+03:00  DEBUG 7812 --- [main] o.s.c.e.PropertySourcesPropertyResolver : Found key 'spring.task.pool-size' in PropertySource 'application.yml'
+2026-10-16T09:12:00.318+03:00  INFO 7812 --- [main] o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 198 ms.
+2026-10-16T09:12:00.330+03:00  DEBUG 7812 --- [main] o.s.b.f.s.DefaultListableBeanFactory : Creating shared instance of singleton bean 'dataSource'
+2026-10-16T09:12:00.362+03:00  DEBUG 7812 --- [main] o.s.b.f.s.DefaultListableBeanFactory : Creating shared instance of singleton bean 'cacheManager'
+2026-10-16T09:12:00.401+03:00  DEBUG 7812 --- [main] o.s.c.e.PropertySourcesPropertyResolver : Found key 'spring.cache.enabled' in PropertySource 'application.yml'
+2026-10-16T09:12:00.413+03:00  DEBUG 7812 --- [main] o.s.b.f.s.DefaultListableBeanFactory : Creating shared instance of singleton bean 'securityFilterChain'
+2026-10-16T09:12:00.432+03:00  DEBUG 7812 --- [main] o.s.c.e.PropertySourcesPropertyResolver : Found key 'spring.mail.enabled' in PropertySource 'application.yml'
+2026-10-16T09:12:00.447+03:00  DEBUG 7812 --- [main] o.s.c.e.PropertySourcesPropertyResolver : Found key 'spring.jpa.timeout' in PropertySource 'application.yml'
+2026-10-16T09:12:00.469+03:00  DEBUG 7812 --- [main] o.s.c.e.PropertySourcesPropertyResolver : Found key 'spring.task.pool-size' in PropertySource 'application.yml'
+2026-10-16T09:12:00.499+03:00  DEBUG 7812 --- [main] o.s.c.e.PropertySourcesPropertyResolver : Found key 'spring.jpa.mode' in PropertySource 'application.yml'
+2026-10-16T09:12:00.522+03:00  INFO 7812 --- [main] o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 161 ms.
+2026-10-16T09:12:00.541+03:00  DEBUG 7812 --- [main] o.s.c.e.PropertySourcesPropertyResolver : Found key 'spring.cache.pool-size' in PropertySource 'application.yml'
+2026-10-16T09:12:00.559+03:00  DEBUG 7812 --- [main] o.s.c.e.PropertySourcesPropertyResolver : Found key 'spring.cache.enabled' in PropertySource 'application.yml'
+2026-10-16T09:12:00.587+03:00  DEBUG 7812 --- [main] o.s.b.f.s.DefaultListableBeanFactory : Creating shared instance of singleton bean 'invoiceService'
+2026-10-16T09:12:00.608+03:00  INFO 7812 --- [main] o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 70 ms.
+2026-10-16T09:12:00.623+03:00  DEBUG 7812 --- [main] o.s.b.f.s.DefaultListableBeanFactory : Creating shared instance of singleton bean 'dataSource'
+2026-10-16T09:12:00.634+03:00  DEBUG 7812 --- [main] o.s.c.e.PropertySourcesPropertyResolver : Found key 'spring.jpa.enabled' in PropertySource 'application.yml'
+2026-10-16T09:12:00.673+03:00  DEBUG 7812 --- [main] o.s.b.f.s.DefaultListableBeanFactory : Creating shared instance of singleton bean 'transactionManager'
+2026-10-16T09:12:00.676+03:00  DEBUG 7812 --- [main] o.s.b.f.s.DefaultListableBeanFactory : Creating shared instance of singleton bean 'restTemplate'
+2026-10-16T09:12:00.679+03:00  DEBUG 7812 --- [main] o.s.c.e.PropertySourcesPropertyResolver : Found key 'spring.jpa.timeout' in PropertySource 'application.yml'
+2026-10-16T09:12:00.702+03:00  DEBUG 7812 --- [main] o.s.b.f.s.DefaultListableBeanFactory : Creating shared instance of singleton bean 'dataSource'
+2026-10-16T09:12:00.736+03:00  DEBUG 7812 --- [main] o.s.b.f.s.DefaultListableBeanFactory : Creating shared instance of singleton bean 'billingClient'
+2026-10-16T09:12:00.760+03:00  DEBUG 7812 --- [main] o.s.b.f.s.DefaultListableBeanFactory : Creating shared instance of singleton bean 'cacheManager'
+2026-10-16T09:12:00.765+03:00  DEBUG 7812 --- [main] o.s.b.f.s.DefaultListableBeanFactory : Creating shared instance of singleton bean 'invoiceService'
+2026-10-16T09:12:00.789+03:00  DEBUG 7812 --- [main] o.s.c.e.PropertySourcesPropertyResolver : Found key 'spring.task.pool-size' in PropertySource 'application.yml'
+2026-10-16T09:12:00.821+03:00  INFO 7812 --- [main] o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33 ms.
+2026-10-16T09:12:00.844+03:00  DEBUG 7812 --- [main] o.s.c.e.PropertySourcesPropertyResolver : Found key 'spring.mail.enabled' in PropertySource 'application.yml'
+2026-10-16T09:12:00.873+03:00  DEBUG 7812 --- [main] o.s.c.e.PropertySourcesPropertyResolver : Found key 'spring.mail.timeout' in PropertySource 'application.yml'
+2026-10-16T09:12:00.881+03:00  DEBUG 7812 --- [main] o.s.b.f.s.DefaultListableBeanFactory : Creating shared instance of singleton bean 'jacksonObjectMapper'
+2026-10-16T09:12:00.893+03:00  DEBUG 7812 --- [main] o.s.c.e.PropertySourcesPropertyResolver : Found key 'spring.jpa.pool-size' in PropertySource 'application.yml'
+2026-10-16T09:12:00.919+03:00  DEBUG 7812 --- [main] o.s.b.f.s.DefaultListableBeanFactory : Creating shared instance of singleton bean 'restTemplate'
+2026-10-16T09:12:00.959+03:00  INFO 7812 --- [main] o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 98 ms.
+2026-10-16T09:12:00.998+03:00  DEBUG 7812 --- [main] o.s.b.f.s.DefaultListableBeanFactory : Creating shared instance of singleton bean 'invoiceService'
+2026-10-16T09:12:01.017+03:00  INFO 7812 --- [main] o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 264 ms.
+2026-10-16T09:12:01.022+03:00  DEBUG 7812 --- [main] o.s.c.e.PropertySourcesPropertyResolver : Found key 'spring.mail.mode' in PropertySource 'application.yml'
+2026-10-16T09:12:01.060+03:00  DEBUG 7812 --- [main] o.s.b.f.s.DefaultListableBeanFactory : Creating shared instance of singleton bean 'restTemplate'
+2026-10-16T09:12:01.096+03:00  INFO 7812 --- [main] o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 87 ms.
+2026-10-16T09:12:01.115+03:00  DEBUG 7812 --- [main] o.s.b.f.s.DefaultListableBeanFactory : Creating shared instance of singleton bean 'meterRegistry'
+2026-10-16T09:12:01.124+03:00  DEBUG 7812 --- [main] o.s.c.e.PropertySourcesPropertyResolver : Found key 'spring.mail.timeout' in PropertySource 'application.yml'
+2026-10-16T09:12:01.141+03:00  DEBUG 7812 --- [main] o.s.b.f.s.DefaultListableBeanFactory : Creating shared instance of singleton bean 'entityManagerFactory'
+2026-10-16T09:12:01.145+03:00  DEBUG 7812 --- [main] o.s.c.e.PropertySourcesPropertyResolver : Found key 'spring.jpa.enabled' in PropertySource 'application.yml'
+2026-10-16T09:12:01.182+03:00  DEBUG 7812 --- [main] o.s.c.e.PropertySourcesPropertyResolver : Found key 'spring.cache.pool-size' in PropertySource 'application.yml'
+2026-10-16T09:12:01.208+03:00  DEBUG 7812 --- [main] o.s.c.e.PropertySourcesPropertyResolver : Found key 'spring.cache.timeout' in PropertySource 'application.yml'
+2026-10-16T09:12:01.244+03:00  DEBUG 7812 --- [main] o.s.b.f.s.DefaultListableBeanFactory : Creating shared instance of singleton bean 'jacksonObjectMapper'
+2026-10-16T09:12:01.275+03:00  INFO 7812 --- [main] o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 275 ms.
+2026-10-16T09:12:01.291+03:00  DEBUG 7812 --- [main] o.s.c.e.PropertySourcesPropertyResolver : Found key 'spring.mail.mode' in PropertySource 'application.yml'
+2026-10-16T09:12:01.323+03:00  DEBUG 7812 --- [main] o.s.b.f.s.DefaultListableBeanFactory : Creating shared instance of singleton bean 'dataSource'
+2026-10-16T09:12:01.332+03:00  DEBUG 7812 --- [main] o.s.c.e.PropertySourcesPropertyResolver : Found key 'spring.jpa.enabled' in PropertySource 'application.yml'
+2026-10-16T09:12:01.360+03:00  DEBUG 7812 --- [main] o.s.c.e.PropertySourcesPropertyResolver : Found key 'spring.mail.enabled' in PropertySource 'application.yml'
+2026-10-16T09:12:01.377+03:00  DEBUG 7812 --- [main] o.s.c.e.PropertySourcesPropertyResolver : Found key 'spring.task.mode' in PropertySource 'application.yml'
+2026-10-16T09:12:01.394+03:00  DEBUG 7812 --- [main] o.s.b.f.s.DefaultListableBeanFactory : Creating shared instance of singleton bean 'dataSource'
+2026-10-16T09:12:01.413+03:00  DEBUG 7812 --- [main] o.s.c.e.PropertySourcesPropertyResolver : Found key 'spring.cache.timeout' in PropertySource 'application.yml'
+2026-10-16T09:12:01.438+03:00  DEBUG 7812 --- [main] o.s.b.f.s.DefaultListableBeanFactory : Creating shared instance of singleton bean 'cacheManager'
+2026-10-16T09:12:01.458+03:00  DEBUG 7812 --- [main] o.s.b.f.s.DefaultListableBeanFactory : Creating shared instance of singleton bean 'meterRegistry'
+2026-10-16T09:12:01.474+03:00  INFO 7812 --- [main] o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 100 ms.
+2026-10-16T09:12:01.507+03:00  INFO 7812 --- [main] o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 156 ms.
+2026-10-16T09:12:01.518+03:00  INFO 7812 --- [main] o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 164 ms.
+2026-10-16T09:12:01.526+03:00  DEBUG 7812 --- [main] o.s.b.f.s.DefaultListableBeanFactory : Creating shared instance of singleton bean 'meterRegistry'
+2026-10-16T09:12:01.544+03:00  DEBUG 7812 --- [main] o.s.b.f.s.DefaultListableBeanFactory : Creating shared instance of singleton bean 'billingClient'
+2026-10-16T09:12:01.575+03:00  DEBUG 7812 --- [main] o.s.b.f.s.DefaultListableBeanFactory : Creating shared instance of singleton bean 'dataSource'
+2026-10-16T09:12:01.591+03:00  INFO 7812 --- [main] o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 204 ms.
+2026-10-16T09:12:01.596+03:00  DEBUG 7812 --- [main] o.s.c.e.PropertySourcesPropertyResolver : Found key 'spring.task.timeout' in PropertySource 'application.yml'
+2026-10-16T09:12:01.626+03:00  INFO 7812 --- [main] o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 172 ms.
+2026-10-16T09:12:01.630+03:00  INFO 7812 --- [main] o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 97 ms.
+2026-10-16T09:12:01.633+03:00  DEBUG 7812 --- [main] o.s.b.f.s.DefaultListableBeanFactory : Creating shared instance of singleton bean 'securityFilterChain'
+2026-10-16T09:12:01.645+03:00  DEBUG 7812 --- [main] o.s.c.e.PropertySourcesPropertyResolver : Found key 'spring.mail.enabled' in PropertySource 'application.yml'
+2026-10-16T09:12:01.658+03:00  DEBUG 7812 --- [main] o.s.b.f.s.DefaultListableBeanFactory : Creating shared instance of singleton bean 'cacheManager'
+2026-10-16T09:12:01.666+03:00  DEBUG 7812 --- [main] o.s.b.f.s.DefaultListableBeanFactory : Creating shared instance of singleton bean 'billingClient'
+2026-10-16T09:12:01.694+03:00  INFO 7812 --- [main] o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36 ms.
+2026-10-16T09:12:01.734+03:00  DEBUG 7812 --- [main] o.s.b.f.s.DefaultListableBeanFactory : Creating shared instance of singleton bean 'billingClient'
+2026-10-16T09:12:01.737+03:00  DEBUG 7812 --- [main] o.s.b.f.s.DefaultListableBeanFactory : Creating shared instance of singleton bean 'restTemplate'
+2026-10-16T09:12:01.754+03:00  DEBUG 7812 --- [main] o.s.c.e.PropertySourcesPropertyResolver : Found key 'spring.jpa.enabled' in PropertySource 'application.yml'
+2026-10-16T09:12:01.760+03:00  INFO 7812 --- [main] o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 182 ms.
+2026-10-16T09:12:01.767+03:00  INFO 7812 --- [main] o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 81 ms.
+2026-10-16T09:12:01.801+03:00  INFO 7812 --- [main] o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 289 ms.
+2026-10-16T09:12:01.831+03:00  DEBUG 7812 --- [main] o.s.b.f.s.DefaultListableBeanFactory : Creating shared instance of singleton bean 'jacksonObjectMapper'
+2026-10-16T09:12:01.868+03:00  DEBUG 7812 --- [main] o.s.b.f.s.DefaultListableBeanFactory : Creating shared instance of singleton bean 'restTemplate'
+2026-10-16T09:12:01.903+03:00  INFO 7812 --- [main] o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 291 ms.
+2026-10-16T09:12:01.928+03:00  INFO 7812 --- [main] o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms.
+2026-10-16T09:12:01.953+03:00  INFO 7812 --- [main] o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 134 ms.
+2026-10-16T09:12:01.960+03:00  DEBUG 7812 --- [main] o.s.b.f.s.DefaultListableBeanFactory : Creating shared instance of singleton bean 'transactionManager'
+2026-10-16T09:12:01.963+03:00  DEBUG 7812 --- [main] o.s.b.f.s.DefaultListableBeanFactory : Creating shared instance of singleton bean 'entityManagerFactory'
+2026-10-16T09:12:01.968+03:00  DEBUG 7812 --- [main] o.s.b.f.s.DefaultListableBeanFactory : Creating shared instance of singleton bean 'dataSource'
+2026-10-16T09:12:01.997+03:00  DEBUG 7812 --- [main] o.s.c.e.PropertySourcesPropertyResolver : Found key 'spring.mail.pool-size' in PropertySource 'application.yml'
+2026-10-16T09:12:02.000+03:00  DEBUG 7812 --- [main] o.s.b.f.s.DefaultListableBeanFactory : Creating shared instance of singleton bean 'dataSource'
+2026-10-16T09:12:02.032+03:00  DEBUG 7812 --- [main] o.s.c.e.PropertySourcesPropertyResolver : Found key 'spring.mail.mode' in PropertySource 'application.yml'
+2026-10-16T09:12:02.052+03:00  DEBUG 7812 --- [main] o.s.b.f.s.DefaultListableBeanFactory : Creating shared instance of singleton bean 'taskScheduler'
+2026-10-16T09:12:02.089+03:00  DEBUG 7812 --- [main] o.s.b.f.s.DefaultListableBeanFactory : Creating shared instance of singleton bean 'transactionManager'
+2026-10-16T09:12:02.116+03:00  DEBUG 7812 --- [main] o.s.c.e.PropertySourcesPropertyResolver : Found key 'spring.task.timeout' in PropertySource 'application.yml'
+2026-10-16T09:12:02.119+03:00  DEBUG 7812 --- [main] o.s.b.f.s.DefaultListableBeanFactory : Creating shared instance of singleton bean 'restTemplate'
+2026-10-16T09:12:02.138+03:00  DEBUG 7812 --- [main] o.s.c.e.PropertySourcesPropertyResolver : Found key 'spring.task.timeout' in PropertySource 'application.yml'
+2026-10-16T09:12:02.153+03:00  DEBUG 7812 --- [main] o.s.c.e.PropertySourcesPropertyResolver : Found key 'spring.jpa.enabled' in PropertySource 'application.yml'
+2026-10-16T09:12:02.159+03:00  DEBUG 7812 --- [main] o.s.b.f.s.DefaultListableBeanFactory : Creating shared instance of singleton bean 'restTemplate'
+2026-10-16T09:12:02.182+03:00  DEBUG 7812 --- [main] o.s.c.e.PropertySourcesPropertyResolver : Found key 'spring.task.pool-size' in PropertySource 'application.yml'
+2026-10-16T09:12:02.214+03:00  INFO 7812 --- [main] o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms.
+2026-10-16T09:12:02.247+03:00  DEBUG 7812 --- [main] o.s.c.e.PropertySourcesPropertyResolver : Found key 'spring.task.pool-size' in PropertySource 'application.yml'
+2026-10-16T09:12:02.287+03:00  DEBUG 7812 --- [main] o.s.c.e.PropertySourcesPropertyResolver : Found key 'spring.task.timeout' in PropertySource 'application.yml'
+2026-10-16T09:12:02.314+03:00  DEBUG 7812 --- [main] o.s.b.f.s.DefaultListableBeanFactory : Creating shared instance of singleton bean 'entityManagerFactory'
+2026-10-16T09:12:02.342+03:00  INFO 7812 --- [main] o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 156 ms.
+2026-10-16T09:12:02.365+03:00  DEBUG 7812 --- [main] o.s.b.f.s.DefaultListableBeanFactory : Creating shared instance of singleton bean 'restTemplate'
+2026-10-16T09:12:02.382+03:00  INFO 7812 --- [main] o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 155 ms.
+2026-10-16T09:12:02.401+03:00  INFO 7812 --- [main] o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 262 ms.
+2026-10-16T09:12:02.426+03:00  DEBUG 7812 --- [main] o.s.c.e.PropertySourcesPropertyResolver : Found key 'spring.task.timeout' in PropertySource 'application.yml'
+2026-10-16T09:12:02.438+03:00  DEBUG 7812 --- [main] o.s.b.f.s.DefaultListableBeanFactory : Creating shared instance of singleton bean 'restTemplate'
+2026-10-16T09:12:02.464+03:00  DEBUG 7812 --- [main] o.s.c.e.PropertySourcesPropertyResolver : Found key 'spring.cache.pool-size' in PropertySource 'application.yml'
+2026-10-16T09:12:02.482+03:00  DEBUG 7812 --- [main] o.s.c.e.PropertySourcesPropertyResolver : Found key 'spring.cache.mode' in PropertySource 'application.yml'
+2026-10-16T09:12:02.496+03:00  DEBUG 7812 --- [main] o.s.c.e.PropertySourcesPropertyResolver : Found key 'spring.jpa.pool-size' in PropertySource 'application.yml'
+2026-10-16T09:12:02.523+03:00  DEBUG 7812 --- [main] o.s.b.f.s.DefaultListableBeanFactory : Creating shared instance of singleton bean 'cacheManager'
+2026-10-16T09:12:02.533+03:00  DEBUG 7812 --- [main] o.s.b.f.s.DefaultListableBeanFactory : Creating shared instance of singleton bean 'securityFilterChain'
+2026-10-16T09:12:02.560+03:00  DEBUG 7812 --- [main] o.s.b.f.s.DefaultListableBeanFactory : Creating shared instance of singleton bean 'taskScheduler'
+2026-10-16T09:12:02.596+03:00  DEBUG 7812 --- [main] o.s.c.e.PropertySourcesPropertyResolver : Found key 'spring.task.enabled' in PropertySource 'application.yml'
+2026-10-16T09:12:02.616+03:00  DEBUG 7812 --- [main] o.s.b.f.s.DefaultListableBeanFactory : Creating shared instance of singleton bean 'meterRegistry'
+2026-10-16T09:12:02.626+03:00  DEBUG 7812 --- [main] o.s.b.f.s.DefaultListableBeanFactory : Creating shared instance of singleton bean 'meterRegistry'
+2026-10-16T09:12:02.640+03:00  DEBUG 7812 --- [main] o.s.c.e.PropertySourcesPropertyResolver : Found key 'spring.cache.enabled' in PropertySource 'application.yml'
+2026-10-16T09:12:02.651+03:00  DEBUG 7812 --- [main] o.s.b.f.s.DefaultListableBeanFactory : Creating shared instance of singleton bean 'restTemplate'
+2026-10-16T09:12:02.669+03:00  DEBUG 7812 --- [main] o.s.c.e.PropertySourcesPropertyResolver : Found key 'spring.mail.mode' in PropertySource 'application.yml'
+2026-10-16T09:12:02.688+03:00  DEBUG 7812 --- [main] o.s.b.f.s.DefaultListableBeanFactory : Creating shared instance of singleton bean 'jacksonObjectMapper'
+2026-10-16T09:12:02.691+03:00  DEBUG 7812 --- [main] o.s.c.e.PropertySourcesPropertyResolver : Found key 'spring.jpa.timeout' in PropertySource 'application.yml'
+2026-10-16T09:12:02.713+03:00  DEBUG 7812 --- [main] o.s.c.e.PropertySourcesPropertyResolver : Found key 'spring.mail.pool-size' in PropertySource 'application.yml'
+2026-10-16T09:12:02.732+03:00  DEBUG 7812 --- [main] o.s.b.f.s.DefaultListableBeanFactory : Creating shared instance of singleton bean 'meterRegistry'
+2026-10-16T09:12:02.740+03:00  DEBUG 7812 --- [main] o.s.c.e.PropertySourcesPropertyResolver : Found key 'spring.task.enabled' in PropertySource 'application.yml'
+2026-10-16T09:12:02.755+03:00  DEBUG 7812 --- [main] o.s.b.f.s.DefaultListableBeanFactory : Creating shared instance of singleton bean 'securityFilterChain'
+2026-10-16T09:12:02.781+03:00  INFO 7812 --- [main] o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 246 ms.
+2026-10-16T09:12:02.808+03:00  DEBUG 7812 --- [main] o.s.b.f.s.DefaultListableBeanFactory : Creating shared instance of singleton bean 'securityFilterChain'
+2026-10-16T09:12:02.837+03:00  DEBUG 7812 --- [main] o.s.b.f.s.DefaultListableBeanFactory : Creating shared instance of singleton bean 'invoiceService'
+2026-10-16T09:12:02.856+03:00  DEBUG 7812 --- [main] o.s.b.f.s.DefaultListableBeanFactory : Creating shared instance of singleton bean 'cacheManager'
+2026-10-16T09:12:02.896+03:00  DEBUG 7812 --- [main] o.s.b.f.s.DefaultListableBeanFactory : Creating shared instance of singleton bean 'invoiceService'
+2026-10-16T09:12:02.911+03:00  INFO 7812 --- [main] o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 210 ms.
+2026-10-16T09:12:02.918+03:00  DEBUG 7812 --- [main] o.s.c.e.PropertySourcesPropertyResolver : Found key 'spring.mail.enabled' in PropertySource 'application.yml'
+2026-10-16T09:12:02.926+03:00  DEBUG 7812 --- [main] o.s.c.e.PropertySourcesPropertyResolver : Found key 'spring.task.mode' in PropertySource 'application.yml'
+2026-10-16T09:12:02.962+03:00  DEBUG 7812 --- [main] o.s.b.f.s.DefaultListableBeanFactory : Creating shared instance of singleton bean 'billingClient'
+2026-10-16T09:12:02.966+03:00  DEBUG 7812 --- [main] o.s.b.f.s.DefaultListableBeanFactory : Creating shared instance of singleton bean 'invoiceService'
+2026-10-16T09:12:02.998+03:00  INFO 7812 --- [main] o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 243 ms.
+2026-10-16T09:12:03.027+03:00  INFO 7812 --- [main] o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 110 ms.
+2026-10-16T09:12:03.034+03:00  DEBUG 7812 --- [main] o.s.b.f.s.DefaultListableBeanFactory : Creating shared instance of singleton bean 'meterRegistry'
+2026-10-16T09:12:03.045+03:00  DEBUG 7812 --- [main] o.s.c.e.PropertySourcesPropertyResolver : Found key 'spring.jpa.timeout' in PropertySource 'application.yml'
+2026-10-16T09:12:03.060+03:00  DEBUG 7812 --- [main] o.s.b.f.s.DefaultListableBeanFactory : Creating shared instance of singleton bean 'dataSource'
+2026-10-16T09:12:03.081+03:00  DEBUG 7812 --- [main] o.s.c.e.PropertySourcesPropertyResolver : Found key 'spring.task.mode' in PropertySource 'application.yml'
+2026-10-16T09:12:03.091+03:00  DEBUG 7812 --- [main] o.s.b.f.s.DefaultListableBeanFactory : Creating shared instance of singleton bean 'entityManagerFactory'
+2026-10-16T09:12:03.130+03:00  INFO 7812 --- [main] o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 72 ms.
+2026-10-16T09:12:03.164+03:00  DEBUG 7812 --- [main] o.s.b.f.s.DefaultListableBeanFactory : Creating shared instance of singleton bean 'jacksonObjectMapper'
+2026-10-16T09:12:03.203+03:00  DEBUG 7812 --- [main] o.s.b.f.s.DefaultListableBeanFactory : Creating shared instance of singleton bean 'billingClient'
+2026-10-16T09:12:03.218+03:00  DEBUG 7812 --- [main] o.s.c.e.PropertySourcesPropertyResolver : Found key 'spring.task.enabled' in PropertySource 'application.yml'
+2026-10-16T09:12:03.256+03:00  DEBUG 7812 --- [main] o.s.c.e.PropertySourcesPropertyResolver : Found key 'spring.task.timeout' in PropertySource 'application.yml'
+2026-10-16T09:12:03.285+03:00  INFO 7812 --- [main] o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 94 ms.
+2026-10-16T09:12:03.285+03:00  INFO 7812 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8443 (https) with context path '/billing'
+2026-10-16T09:12:03.308+03:00  DEBUG 7812 --- [main] o.s.b.f.s.DefaultListableBeanFactory : Creating shared instance of singleton bean 'restTemplate'
+2026-10-16T09:12:03.311+03:00  DEBUG 7812 --- [main] o.s.b.f.s.DefaultListableBeanFactory : Creating shared instance of singleton bean 'restTemplate'
+2026-10-16T09:12:03.331+03:00  DEBUG 7812 --- [main] o.s.c.e.PropertySourcesPropertyResolver : Found key 'spring.jpa.pool-size' in PropertySource 'application.yml'
+2026-10-16T09:12:59.874+03:00  INFO 7812 --- [main] c.e.billing.BillingApplication           : Started BillingApplication in 6.912 seconds (process running for 7.4)

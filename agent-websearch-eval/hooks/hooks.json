@@ -1,0 +1,24 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [
+      { "hooks": [{ "type": "command", "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/scripts/hook.py\"", "timeout": 10 }] }
+    ],
+    "SessionEnd": [
+      { "hooks": [{ "type": "command", "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/scripts/hook.py\"", "timeout": 10 }] }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "^(WebSearch|WebFetch|mcp__.*)$",
+        "hooks": [{ "type": "command", "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/scripts/hook.py\"", "timeout": 20 }]
+      },
+      {
+        "matcher": "Bash",
+        "hooks": [
+          { "type": "command", "if": "Bash(curl *)", "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/scripts/hook.py\"", "timeout": 20 },
+          { "type": "command", "if": "Bash(wget *)", "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/scripts/hook.py\"", "timeout": 20 },
+          { "type": "command", "if": "Bash(gh *)", "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/scripts/hook.py\"", "timeout": 20 }
+        ]
+      }
+    ]
+  }
+}

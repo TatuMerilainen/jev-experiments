@@ -1,0 +1,73 @@
+[
+  {
+    "id": "pytest-failure",
+    "command": "./run.sh",
+    "purpose": "Run the test suite",
+    "question": "Why did the test suite fail?",
+    "needles": [
+      "tests/test_invoice.py:88",
+      "AssertionError: assert 'VAT: FI12345678'"
+    ],
+    "answer": [
+      "invoice",
+      "vat"
+    ],
+    "exit": 1
+  },
+  {
+    "id": "build-error",
+    "command": "./run.sh",
+    "purpose": "Run the production build",
+    "question": "Why did the build fail?",
+    "needles": [
+      "TS2339: Property 'retryAfter'",
+      "src/api/client.ts(42,17)"
+    ],
+    "answer": [
+      "client.ts",
+      "retryafter"
+    ],
+    "exit": 1
+  },
+  {
+    "id": "oom-restart",
+    "command": "./run.sh",
+    "purpose": "Show the worker log",
+    "question": "Why did the queuetopia worker restart around 14:03?",
+    "needles": [
+      "Out of memory: Killed process 4121",
+      "status=9/KILL"
+    ],
+    "answer": [
+      "memory"
+    ],
+    "exit": 0
+  },
+  {
+    "id": "npm-eresolve",
+    "command": "./run.sh",
+    "purpose": "Install the dependencies",
+    "question": "Why did npm install fail?",
+    "needles": [
+      "peer react@\"^18.2.0\" from react-datepicker@6.9.0",
+      "ERESOLVE unable to resolve"
+    ],
+    "answer": [
+      "react-datepicker"
+    ],
+    "exit": 1
+  },
+  {
+    "id": "startup-port",
+    "command": "./run.sh",
+    "purpose": "Start the billing service",
+    "question": "Which port did the billing service start on?",
+    "needles": [
+      "Tomcat started on port 8443"
+    ],
+    "answer": [
+      "8443"
+    ],
+    "exit": 0
+  }
+]

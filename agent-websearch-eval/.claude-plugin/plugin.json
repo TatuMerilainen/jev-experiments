@@ -1,0 +1,28 @@
+{
+  "name": "agent-websearch-eval",
+  "version": "0.1.0",
+  "description": "Checks outside input with Jev before Claude reads it: web search and web fetch results, MCP tool results, and curl, wget and gh output. Warns Claude and you when the text tries to change Claude's behaviour without your consent.",
+  "userConfig": {
+    "typesafe_api_key": {
+      "type": "string",
+      "title": "TypeSafe API key",
+      "description": "Key from console.typesafe.ai. Leave empty to use TYPESAFE_API_KEY from the environment.",
+      "sensitive": true
+    },
+    "mode": {
+      "type": "string",
+      "title": "Action on a flagged result",
+      "description": "warn: Claude gets the result and a warning. redact: the flagged passages are removed first, and Claude gets a warning.",
+      "options": ["warn", "redact"],
+      "default": "warn"
+    },
+    "flag_at": {
+      "type": "number",
+      "title": "Flag threshold",
+      "description": "Jev score from 0 to 1 at which a result is flagged. A lower value catches more and gives more false alarms.",
+      "default": 0.5,
+      "min": 0.05,
+      "max": 0.99
+    }
+  }
+}

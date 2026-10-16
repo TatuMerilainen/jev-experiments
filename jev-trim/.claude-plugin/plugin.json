@@ -1,0 +1,29 @@
+{
+  "name": "jev-trim",
+  "version": "0.1.0",
+  "description": "Trims long command output with Jev before Claude reads it. Jev keeps the lines that matter for your request, such as errors, failures and the values you asked about. Claude reads fewer tokens.",
+  "userConfig": {
+    "typesafe_api_key": {
+      "type": "string",
+      "title": "TypeSafe API key",
+      "description": "Key from console.typesafe.ai. Leave empty to use TYPESAFE_API_KEY from the environment.",
+      "sensitive": true
+    },
+    "keep_at": {
+      "type": "number",
+      "title": "Keep threshold",
+      "description": "Jev score from 0 to 1 at which a passage is kept. A lower value keeps more lines.",
+      "default": 0.3,
+      "min": 0.05,
+      "max": 0.95
+    },
+    "min_chars": {
+      "type": "number",
+      "title": "Minimum output size",
+      "description": "Output shorter than this many characters goes to Claude unchanged.",
+      "default": 6000,
+      "min": 1000,
+      "max": 100000
+    }
+  }
+}
