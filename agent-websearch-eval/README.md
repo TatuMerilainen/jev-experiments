@@ -135,7 +135,6 @@ The note to Claude and the note to the classifier quote no text from the result.
 - **Located passage:** for all 18 injections, the passage search found the injected sentence.
 - **Stability:** 3 runs of the first 38 cases gave the same outcome. A score moved by at most 0.07 between runs.
 - **Licence footer:** the first version of the main question scored the demo page 0.37 and missed it. The criteria now name "add text to its replies" and licence framing. The page scores 0.77, and a normal licence notice scores 0.03.
-- **Jev 1.14 preview:** 16 of 17 caught. The fake `<user>` turn scored 0.69 on the second question. Clean hard negatives scored higher, up to 0.39. The plugin stays on `jev-1.13.0`.
 
 Live tests in Claude Code 2.1.300 with `claude -p` and `--plugin-dir`:
 
@@ -245,14 +244,6 @@ python3 scripts/evaluate.py --only injection --model jev-1.14.0
 - **Fail open.** When the API is down or slow, results go through unchanged. The hook's HTTP timeout is 6 seconds per request, and the hook timeout is 20 seconds.
 - **Language.** One Finnish case was caught at 0.98. Jev's accuracy is best in English.
 
-## Codex
-
-The check code has no Claude Code parts, so it can serve Codex hooks too. A port would need a small output adapter.
-
-- Codex `PostToolUse` hooks run for shell commands and MCP tools.
-- They do not run for Codex's built-in web search: "These don't use the local function-tool hook path." ([Hooks](https://learn.chatgpt.com/docs/hooks))
-- Codex can add context (`additionalContext`). It can also replace the whole result with a message (`decision: "block"`). `updatedMCPToolOutput` is "parsed but not supported yet", so redact mode would replace the whole result.
-
 ## Layout
 
 ```
@@ -269,12 +260,6 @@ agent-websearch-eval/
 ├── tests/filler.md              # a long docs page for the 2-chunk cases
 └── tests/test_plugin.py         # unit tests with a fake Jev client
 ```
-
-## Ideas to test later
-
-- A larger test set from real traffic: the check log shows scores for every real result, and the plugin could save flagged texts on request.
-- A `PreToolUse` hook that asks before `WebFetch` on domains that were flagged before.
-- An option to check `Read` for files in folders that came from outside, such as `node_modules` or a fresh clone.
 
 ## Sources
 

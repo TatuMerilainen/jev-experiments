@@ -1,8 +1,8 @@
 # Tabletop game runner
 
-A demo bot that plays board games with Jev, with a web UI that shows each decision. It plays tic-tac-toe and chess. Checkers may come later.
+A demo bot that plays board games with Jev, with a web UI that shows each decision. It plays tic-tac-toe and chess.
 
-**Status:** tic-tac-toe and chess work in the web UI. Unit tests and a UI run against a fake TypeSafe API pass. The Jev prompts have not been tried against the real API yet.
+**Status:** tic-tac-toe and chess work in the web UI.
 
 The sections from "Goal" to "Evaluation" describe tic-tac-toe. Chess has its own section: [Chess](#chess).
 
@@ -48,8 +48,8 @@ The top of the page has three columns: X's player panel, the game, and O's playe
 | Status line | The game number and its state, above the board. "Swap sides" on the right swaps the X and O configurations and starts a new experiment. The button is disabled when both sides have the same configuration. |
 | Board | The current game only. A small dot marks the last move. While the pointer is over the board, each cell shows its name (a1 to c3) in the top left corner. When a game is won, the winning line is tinted and the other cells fade. |
 | Toolbar | Reset, Step (one move), Play (Pause while playing, Restart after a game), and a slider for the delay between moves with four stops: No delay (full speed), 0.25 s, 1 s (the default) and 2 s. Below: the "Random first move" and "Continuous play" switches. |
-| Configuration vs configuration | A bar for the two configurations playing now: wins of the left one, draws, wins of the right one. It counts every saved game between these two configurations, from all experiments and with either side. It changes as soon as a player setting changes, and it updates after each saved game. "All configurations" lists every pair with saved games, most games first. The "Split by who went first" switch (off by default) shows two bars per pair, stacked as one block: the games where the left configuration went first, then those where it went second. The figures of the first bar sit above the block, and those of the second bar below it. An order with no games shows a dashed outline. The first move is an advantage, so the two bars can differ a lot. A pair with the same configuration on both sides already compares the two sides, so it keeps one bar. The "Split by model" switch (off by default) counts each Jev model as its own configuration: the bar then counts only games played with the current models, and the list shows each model apart. With the switch off, games of all models count together. Games saved before players had a model setting count as `jev-1.13.0`, the only version used then. The "Split by opening" switch (off by default) shows one bar for each way the games started: from the start position or with a random first move. Only the kinds with saved games show. Each bar has its own games list, and "All configurations" shows one group per kind. With the switch off, the note under the bar says how many of the games had a random first move, and the games list marks them. Under each pair, "Games" lists its last 20 games, newest first: the time, who went first, the result and the length. Clicking a game opens it as a replay. |
-| Move | The selected move: the position before it, plus the time, Jev requests and tokens. On the board, each free cell shows the player's own value for that move as a number, with two decimals. Its colour shows the true result from the solver: green keeps the best result the player could still reach, red gives part of it away. A sentence under the board says what the move did, and for a mistake it lists the moves that keep the best result. "Details" adds the true result of each candidate. "Details" holds every candidate with its value, the opponent's worst reply, the number of positions decided by code, and the positions Jev rated. A rated position shows the value the search uses: 0.9 × Jev's value. A replay of an older saved move shows the five levels of the older question. |
+| Configuration vs configuration | A bar for the two configurations playing now: wins of the left one, draws, wins of the right one. It counts every saved game between these two configurations, from all experiments and with either side. It changes as soon as a player setting changes, and it updates after each saved game. "All configurations" lists every pair with saved games, most games first. The "Split by who went first" switch (off by default) shows two bars per pair, stacked as one block: the games where the left configuration went first, then those where it went second. The figures of the first bar sit above the block, and those of the second bar below it. An order with no games shows a dashed outline. The first move is an advantage, so the two bars can differ a lot. A pair with the same configuration on both sides already compares the two sides, so it keeps one bar. The "Split by model" switch (off by default) counts each Jev model as its own configuration: the bar then counts only games played with the current models, and the list shows each model apart. With the switch off, games of all models count together. The "Split by opening" switch (off by default) shows one bar for each way the games started: from the start position or with a random first move. Only the kinds with saved games show. Each bar has its own games list, and "All configurations" shows one group per kind. With the switch off, the note under the bar says how many of the games had a random first move, and the games list marks them. Under each pair, "Games" lists its last 20 games, newest first: the time, who went first, the result and the length. Clicking a game opens it as a replay. |
+| Move | The selected move: the position before it, plus the time, Jev requests and tokens. On the board, each free cell shows the player's own value for that move as a number, with two decimals. Its colour shows the true result from the solver: green keeps the best result the player could still reach, red gives part of it away. A sentence under the board says what the move did, and for a mistake it lists the moves that keep the best result. "Details" adds the true result of each candidate. "Details" holds every candidate with its value, the opponent's worst reply, the number of positions decided by code, and the positions Jev rated. A rated position shows the value the search uses: 0.9 × Jev's value. |
 | Experiment | Games, wins, draws and distinct games. "Per player" holds Jev requests and tokens per move. The model, the Jev cost so far, and the save location. |
 | Moves | The current game's moves. Click one to show it in the Move panel. The Move panel then stays on that move while new moves arrive. "Latest move" in the Move panel shows the newest move again and follows each new move. |
 | Jev sidebar | The "Jev request" button in the header opens it. Under the title, one sentence says what the request asks, for example "Jev rates a position 2 moves ahead: how does the game end for X?". A muted line below names the move. Then it shows the Jev call in the order of the TypeSafe Playground: badges for the model, input tokens, cost and response time, then the State and the Questions as JSON, then the Answers with the probability of each option. The sidebar follows the page theme. In dark mode it is a few steps lighter than the game cards, so it reads as a separate panel. Each part has a Copy button, so it can be pasted into the Playground. The call is the first Jev request of the selected move. When that move made no Jev request, the sidebar shows the latest move that did. On a wide screen the sidebar fills the space to the right of the page; below 1100 px it lies over the page. The sidebar remembers whether it was open. |
@@ -58,7 +58,7 @@ Behaviour:
 
 - The page starts paused. Press Play or Step.
 - After a human move, the bot answers by itself, also while play is paused.
-- Each game's settings are saved in the browser: both player setups (with the model and custom instructions), "Random first move" (in chess the "Openings" choice), the delay and "Continuous play". They come back after a page reload. A saved value that is no longer valid falls back to its default. Saved chess settings from before the "Openings" choice keep their "Random first move" setting.
+- Each game's settings are saved in the browser: both player setups (with the model and custom instructions), "Random first move" (in chess the "Openings" choice), the delay and "Continuous play". They come back after a page reload. A saved value that is no longer valid falls back to its default.
 - Play runs one game and stops at its end. The board and the Move panel keep showing the last move.
 - After a game, the Play button reads Restart. Restart starts the next game and plays it. The tally keeps counting.
 - **Continuous play** (off by default): when a game ends, the next game starts after the move delay. Play goes on until you press Pause. Turning the switch off during a game makes that game the last one.
@@ -126,7 +126,7 @@ The "Chess puzzles" tab runs one player through a fixed set of Lichess puzzles. 
 Every move and every finished game is saved to disk. There is one folder per experiment:
 
 ```
-data/experiments/2026-10-14_10-11-28_X-jev-lookahead-d2-custom_O-perfect_aiq8/
+data/experiments/2026-10-14_10-11-28_X-jev-lookahead-d2-v1-14-0-custom_O-perfect_aiq8/
 ├── experiment.json   # settings, including custom instructions, and the default prompt texts
 ├── moves.jsonl       # one line per move
 └── games.jsonl       # one line per finished game
@@ -138,9 +138,8 @@ data/experiments/2026-10-14_10-11-28_X-jev-lookahead-d2-custom_O-perfect_aiq8/
 - **A cut-off line.** A server stop during a write can leave a line without its end. That line is skipped when the data is read. The next saved line starts on a new line, so it stays whole.
 - **Replay with a missing move.** When a move line is missing, the replay stops before it, so every shown move keeps its number. The replay bar then says how many moves were saved.
 - `experiment.json` saves the prompt texts. Results stay tied to the wording that produced them, even after the prompts change.
-- **A line in `moves.jsonl`:** the game and move number, the player, the cell, the player setup, the board before the move, the grade, and the round-trip time. For a bot it also holds the full decision: every candidate, every position Jev judged with its level probabilities, the request count, tokens and time. Moves saved since replays exist also hold the first Jev request of the move and its answer (`jevExample`), so the Jev sidebar works in a replay.
+- **A line in `moves.jsonl`:** the game and move number, the player, the cell, the player setup, the board before the move, the grade, and the round-trip time. For a bot it also holds the full decision: every candidate, every position Jev judged with its level probabilities, the request count, tokens and time. The line also holds the first Jev request of the move and its answer (`jevExample`), so the Jev sidebar works in a replay.
 - **Look-ahead decision.** It has `exactLeaves`: the number of distinct leaves that code decided.
-- **Old version fields.** Older saved setups and decisions can have a `version` field. The app ignores it, so old and new games of a player count together. See [Player changes](#player-changes).
 - **A line in `games.jsonl`:** the result and the move sequence, for example `["a1", "b2", "b1", ...]`.
 - **Size:** a Jev look-ahead move at depth 2 is about 4 KB.
 - **Location:** `data/` is in `.gitignore`.
@@ -155,18 +154,6 @@ jq -r '.result' data/experiments/<folder>/games.jsonl | sort | uniq -c
 # Moves that were mistakes
 jq -c 'select(.move.grade.optimal == false) | {gameNo, moveNo, player: .move.player, cell: .move.cell}' data/experiments/<folder>/moves.jsonl
 ```
-
-## Player changes
-
-These players changed over time. Saved games from before and after a change count together.
-
-| Game | Player | Change |
-| --- | --- | --- |
-| Tic-tac-toe | Jev look-ahead | Three Score levels (loss, draw, win) and the value P(win) − P(loss). Code decides the leaves with a known result. |
-| Tic-tac-toe | Jev direct | One request with two Choice questions. It sent two requests before. |
-| Chess | Jev, Jev alone | The threat text uses the opponent's legal captures, and it says when a move repeats an earlier position. The code search scores a repeated position as a draw. The candidate cut-off keeps a move that scores exactly 75 centipawns below the best move. |
-| Chess | Code | The code search scores a repeated position as a draw. |
-| Chess | Stockfish | Every search starts with an empty hash table, so the same position at the same depth gives the same move. Stockfish gets the moves of the game, so it sees repetitions. |
 
 ## Approach
 
@@ -229,8 +216,8 @@ The default prompts are in `src/shared/prompts.ts`. The request is built in `src
 ```
 
 - `lines` holds all 8 lines (two are shown here). Code builds it from the board. The TypeSafe docs say Jev reads spatial and numeric layouts poorly and advise doing such conversions in code. The "Send lines" option per player turns it off, so both formats can be compared in one experiment.
-- **Look-ahead question:** one Score. "It is `to_move`'s turn. If both players play their best from here, how does this game end for `you_play`?" Three levels, worst first: will lose, draw, will win. Each level has a short explanation with examples, built in `positionLevels()`. The three levels are the three results with best play, so a drawn position has one level. An older question had five levels: will lose, worse, even, better, will win. The levels "worse", "even" and "better" all described drawn positions, so a draw rated "worse" counted almost as half a loss.
-- **Direct question:** one request with two Choice questions over the legal moves, with no look-ahead. Jev can favour the first option, so the second question lists the moves in reverse order. The bot averages the two answers. Until 2026-10-16, the bot sent the two questions as two requests. Those moves cost about 40% more.
+- **Look-ahead question:** one Score. "It is `to_move`'s turn. If both players play their best from here, how does this game end for `you_play`?" Three levels, worst first: will lose, draw, will win. Each level has a short explanation with examples, built in `positionLevels()`. The three levels are the three results with best play, so a drawn position has one level.
+- **Direct question:** one request with two Choice questions over the legal moves, with no look-ahead. Jev can favour the first option, so the second question lists the moves in reverse order. The bot averages the two answers.
 
 ## Players
 
@@ -251,9 +238,6 @@ The gap between "Search only" and "Jev look-ahead" at the same depth is what Jev
   - Jev look-ahead against Perfect: Jev should never lose.
   - Jev look-ahead against Random: Jev should win most games.
   - Jev look-ahead against Search only, with the same depth.
-- **Position test (not built yet).** Tic-tac-toe has 627 unfinished positions, counted after rotation and reflection. In 431 of them, at least one legal move is a mistake. A script could measure the share of those 431 where the bot picks an optimal move.
-
-**Cost estimate.** `jev-1.13` costs $0.042 per million input tokens. A leaf request is 872 tokens with the lines included. This is the average of the saved games, and it is the same for both models. A full position test then costs at most about $1.14, even with no caching (431 positions × up to 72 leaves × 872 tokens).
 
 ## Chess
 
@@ -350,7 +334,7 @@ The request is built in `src/server/chess/jev.ts`. Code computes all the text in
 
 Stockfish rates every move at depth 12, for every player. The loss of a move is Stockfish's score for its best move minus its score for the played move. The loss is capped at 1000, so a missed mate counts as 1000.
 
-Each Stockfish search, a rating or a Stockfish move, starts with `ucinewgame`, so the hash table is empty. The same position then always gets the same result. Measured on 80 saved positions, this adds about 1 ms per search: a rating takes 14 ms instead of 12.5 ms.
+Each Stockfish search, a rating or a Stockfish move, starts with `ucinewgame`, so the hash table is empty. The same position then always gets the same result.
 
 **Win chance.** Each rating also turns Stockfish's scores into the mover's win chance, with Lichess's formula: win% = 50 + 50 × (2 / (1 + exp(−0.00368208 × cp)) − 1). As on Lichess, a score is capped at ±1000 centipawns, and a mate counts as 1000. So a mate gives 97.5% or 2.5%, not 100% or 0%. The win chance loss is the win% with the best move minus the win% with the played move. In a won or lost position, a large centipawn loss changes the win chance only a little, so the win chance loss is a fairer measure there. The formulas are in `src/shared/chess/winPercent.ts`. They come from Lichess's source: `core/src/main/scala/eval.scala` in scalachess, and `modules/analyse/src/main/AccuracyPercent.scala` and `modules/tree/src/main/Advice.scala` in lila.
 
@@ -365,8 +349,6 @@ Each Stockfish search, a rating or a Stockfish move, starts with `ucinewgame`, s
 | Blunder | 15 points or more |
 
 When a move lets the opponent force mate, or loses a forced mate, Lichess uses its mate rules instead. A move that allows mate is a blunder, a mistake when the position was already below −7 pawns, and an inaccuracy below −10 pawns. A move that loses a forced mate is a blunder, a mistake when more than +7 pawns are left, and an inaccuracy above +10 pawns.
-
-Ratings saved before the win chance existed have no win chance data. They keep the centipawn labels: Best move 0, Good 1–49, Inaccuracy 50–99, Mistake 100–299, Blunder 300 or more. In the averages of the new columns, they are left out.
 
 **Accuracy.** Lichess's accuracy of one move: 103.1668 × exp(−0.04354 × win chance loss) − 3.1669, plus 1, between 0 and 100. A move that gives nothing away has 100%. The tally shows the average over a player's rated moves. Lichess's game accuracy also weights the moves by how much the position changes; the tally takes the plain average.
 
@@ -398,7 +380,7 @@ The layout is the same as tic-tac-toe: White's panel on the left, the board in t
 | Player panels | Player type with a one-line description. Jev players also show their instructions, with an Edit link. "More settings" holds the Jev model, the search depth (or Stockfish's depth) and the "Send piece lists" and "Describe threats" switches. At the bottom: wins, average loss and time per move. |
 | Board | The last move is highlighted. When Black is the only human player, the board turns so that Black is at the bottom. |
 | Status line and Toolbar | Same as tic-tac-toe. "Swap sides" swaps the White and Black configurations. The "Openings" choice takes the place of the "Random first move" switch: "Start position", "Random first move" or "Opening set". Changing it starts a new experiment. With the opening set, the status line names the opening and the pass, for example "Game 7 · Italian Game: Giuoco Piano · 7 of 24, pass 1 of 2 · Playing". |
-| Configuration vs configuration | A bar for the two configurations playing now: wins of the left one, draws, wins of the right one. It counts every saved game between these two configurations, from all experiments and with either side. It changes as soon as a player setting changes, and it updates after each saved game. "All configurations" lists every pair with saved games, most games first. The "Split by who went first" switch (off by default) shows two bars per pair, stacked as one block: the games where the left configuration went first, then those where it went second. The figures of the first bar sit above the block, and those of the second bar below it. An order with no games shows a dashed outline. The first move is an advantage, so the two bars can differ a lot. A pair with the same configuration on both sides already compares the two sides, so it keeps one bar. The "Split by model" switch (off by default) counts each Jev model as its own configuration: the bar then counts only games played with the current models, and the list shows each model apart. With the switch off, games of all models count together. Games saved before players had a model setting count as `jev-1.13.0`, the only version used then. The "Split by opening" switch (off by default) shows one bar for each way the games started: from the start position, with a random first move, or from the opening set. Only the kinds with saved games show. Each bar has its own games list, and "All configurations" shows one group per kind. With the switch off, the note under the bar says how many of the games had a random first move or came from the opening set. The games list marks a random first move and names the opening of an opening set game. Games saved before the opening set count by their "Random first move" setting. Under each pair, "Games" lists its last 20 games, newest first: the time, who went first, the result and the length. Clicking a game opens it as a replay. |
+| Configuration vs configuration | A bar for the two configurations playing now: wins of the left one, draws, wins of the right one. It counts every saved game between these two configurations, from all experiments and with either side. It changes as soon as a player setting changes, and it updates after each saved game. "All configurations" lists every pair with saved games, most games first. The "Split by who went first" switch (off by default) shows two bars per pair, stacked as one block: the games where the left configuration went first, then those where it went second. The figures of the first bar sit above the block, and those of the second bar below it. An order with no games shows a dashed outline. The first move is an advantage, so the two bars can differ a lot. A pair with the same configuration on both sides already compares the two sides, so it keeps one bar. The "Split by model" switch (off by default) counts each Jev model as its own configuration: the bar then counts only games played with the current models, and the list shows each model apart. With the switch off, games of all models count together. The "Split by opening" switch (off by default) shows one bar for each way the games started: from the start position, with a random first move, or from the opening set. Only the kinds with saved games show. Each bar has its own games list, and "All configurations" shows one group per kind. With the switch off, the note under the bar says how many of the games had a random first move or came from the opening set. The games list marks a random first move and names the opening of an opening set game. Under each pair, "Games" lists its last 20 games, newest first: the time, who went first, the result and the length. Clicking a game opens it as a replay. |
 | Move | The selected move with its rating label, its loss in centipawns and its win chance loss, and Stockfish's preferred move when it differs. The position before the move, the time, the number of legal moves, and Jev's tokens and cost. The candidates with Jev's probability and the code's score in pawns. "Details" holds the text Jev read for each move. |
 | Experiment | Games, wins for each colour, draws and cost per game. "Per player" holds average loss, accuracy, average win chance loss, blunders, time and tokens per move. The footer shows the model, the cost of this game, the total cost and the save location. |
 | Moves | The current game's moves with the time and the loss: ✓ for the best move, −N for a loss, … while Stockfish is still rating. |
@@ -409,14 +391,14 @@ The layout is the same as tic-tac-toe: White's panel on the left, the board in t
 Chess uses the same three files as tic-tac-toe ([Saved data](#saved-data)). The folder name starts with `chess_`:
 
 ```
-data/experiments/chess_2026-10-14_10-05-12_W-jev-d2_B-stockfish-d5_k3f9/
+data/experiments/chess_2026-10-14_10-05-12_W-jev-d2-v1-14-0_B-stockfish-d5_k3f9/
 ```
 
 - **Folder name.** `-d2` is the search depth. `-v1-14-0` names a Jev player's model (`jev-1.14.0`). `-noboard` marks piece lists off, `-basic` marks threat descriptions off, and `-custom` marks custom instructions. `_random-first` marks a random first move, and `_openings` the opening set.
-- **A line in `moves.jsonl`:** the colour, the move in SAN and UCI, the source, the player setup, the position before the move (FEN), the round-trip time and the rating. A rating saved since the win chance exists also has `winBefore`, `winAfter`, `winLoss` (in points of win%) and `judgement` (`"inaccuracy"`, `"mistake"`, `"blunder"` or `null`). For a bot it also holds the decision: every candidate with its text, code score and Jev probability, plus tokens and times. Moves saved since replays exist also hold the first Jev request and its answer.
+- **A line in `moves.jsonl`:** the colour, the move in SAN and UCI, the source, the player setup, the position before the move (FEN), the round-trip time and the rating. The rating also has `winBefore`, `winAfter`, `winLoss` (in points of win%) and `judgement` (`"inaccuracy"`, `"mistake"`, `"blunder"` or `null`). For a bot it also holds the decision: every candidate with its text, code score and Jev probability, plus tokens and times. The line also holds the first Jev request and its answer.
 - A move is saved once Stockfish has rated it. When you switch to the other game, the moves that still wait for a rating are saved without one, and a finished game is saved after them.
 - **A line in `games.jsonl`:** the result (`1-0`, `0-1` or `1/2-1/2`), the reason, the number of plies, the Jev tokens and the moves in SAN.
-- `experiment.json` saves the default instructions, the state fields and the candidate limits. Its settings hold the "Openings" choice as `openings` (`"start"`, `"random-first"` or `"opening-set"`), and `randomFirst` for older readers.
+- `experiment.json` saves the default instructions, the state fields and the candidate limits. Its settings hold the "Openings" choice as `openings` (`"start"`, `"random-first"` or `"opening-set"`).
 
 Examples with `jq`:
 
@@ -430,20 +412,18 @@ jq -c 'select(.move.grade.judgement == "blunder") | {gameNo, moveNo, san: .move.
 
 ### Chess cost and speed
 
-- **Cost per move.** The research measured 650–750 tokens for one Jev call over the code's candidates. The current request has two questions, so it is probably a little larger. It has not been measured against the real API yet. The UI shows the real count.
+- **Cost per move.** The research measured 650–750 tokens for one Jev call over the code's candidates. The current request has two questions, so it is probably a little larger. The UI shows the real count.
 - **Cost per game.** At 750 tokens per move, a 100-ply game with Jev on both sides uses 75,000 tokens: about $0.003. The 300-ply limit keeps the worst case near one cent (300 × 800 tokens = $0.010).
 - **Jev alone** sends every legal move. In the research that was about 2,450 tokens per call, roughly three times the cost.
-- **Speed.** Measured on this machine on positions from saved games and puzzles, without Jev. Stockfish rates a move in 2–22 ms. Jev's response time is not known yet.
+- **Speed.** Measured on this machine on positions from saved games and puzzles, without Jev. Stockfish rates a move in 2–22 ms.
 
-  | Depth | Positions | Average | Worst | Before the position table |
-  | --- | --- | --- | --- | --- |
-  | 2 | 199 | 23 ms | 97 ms | 27 ms average |
-  | 3 | 199 | 113 ms | 547 ms | 206 ms average |
-  | 4 | 25 | 0.6 s | 2.7 s | 1.7 s average, 11.8 s worst |
-  | 5 | 10 | 1.9 s | 4.0 s | 9.8 s average, 44 s worst |
-
-  In all these positions, the search with the table gave the same candidates and scores as the search before it.
-- **Repetition check.** On 32 positions from saved games, the search with the game history takes 20 ms on average at depth 2 (15 ms before) and 92 ms at depth 3 (86 ms before). The extra time includes the replay of the game's moves.
+  | Depth | Positions | Average | Worst |
+  | --- | --- | --- | --- |
+  | 2 | 199 | 23 ms | 97 ms |
+  | 3 | 199 | 113 ms | 547 ms |
+  | 4 | 25 | 0.6 s | 2.7 s |
+  | 5 | 10 | 1.9 s | 4.0 s |
+- **Repetition check.** On 32 positions from saved games, the search with the game history takes 20 ms on average at depth 2 and 92 ms at depth 3. This includes the replay of the game's moves.
 
 ### Chess implementation notes
 
@@ -503,30 +483,6 @@ tabletop-game-runner/
 - **Browser.** The browser owns the game loop: delay, step, pause, reset and tally. It sends each move and each finished game to `POST /api/log`, one request at a time, in order.
 - **Stopping.** Reset, player changes and a switch to the other game cancel the request in flight, and the server then stops its pending Jev calls. Pause lets the current move finish. Saves that wait in the queue still finish after a switch.
 - **A failed Jev request.** In a look-ahead move, the first failed request stops the move. The bot starts no more requests and aborts the ones in flight.
-
-## Later games
-
-### Checkers
-
-A possible next game. The rules need forced captures, multi-jumps and kings. A turn has about 8 to 10 legal moves, so depth 2 or 3 stays affordable. The search and the Jev parts should carry over. The board UI and the rules module are game-specific.
-
-## Next steps
-
-### Tic-tac-toe
-
-1. Run against the real API with a key. Check the Score wording on positions where the bot makes mistakes, and tune it.
-2. Compare "Send lines" on and off, and depth 1, 2 and 3.
-3. Position test script over the 431 positions.
-4. Demo idea: change the rules at run time, for example "misère tic-tac-toe: three in a row loses". The rules code must change too, so this shows the cost of keeping the rules in two places.
-
-### Chess
-
-1. Run against the real API with a key. Measure the tokens per move and Jev's response time.
-2. Play many games of "Jev" against "Search only" at the same depth, and compare the average loss.
-3. Confidence check: play the code's top move when Jev's probabilities are flat.
-4. Playing style: Score questions per candidate (for example safety, activity, attack), with weights in code.
-5. A deeper code search, for better candidates.
-6. A position test over 200 or more positions, rated by Stockfish.
 
 ## Sources
 

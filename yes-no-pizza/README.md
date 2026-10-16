@@ -2,7 +2,7 @@
 
 Ask a question. Jev answers yes, no or pizza.
 
-**Status:** works against a fake TypeSafe API. Not yet tried against the real API.
+**Status:** works.
 
 ## Run
 
@@ -33,5 +33,3 @@ The state is `{ "question": "<your text>" }`. The text can be at most 500 charac
 - The question box: Enter asks, Shift+Enter adds a new line.
 - The answer card: the answer in large text, and Jev's confidence.
 - The Jev sidebar: the same panel as in the tabletop game runner. It shows the model, input tokens, cost, response time, the state, the question and the probability of each option. Each part has a Copy button. The "Jev request" button in the header opens and closes it. It is open by default, and the browser remembers the choice.
-
-The sidebar and most of the styles are copied from the tabletop game runner.
